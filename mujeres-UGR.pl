@@ -11,7 +11,7 @@ use v5.20;
 my $query=<<EOC;
 SELECT ?person ?personLabel WHERE {
   
-    ?person wdt:P69 wd:Q1232180 . 
+    ?person wdt:P69 wd:Q1232810 . 
     ?person wdt:P21 wd:Q6581072 . 
   
     SERVICE wikibase:label { 
