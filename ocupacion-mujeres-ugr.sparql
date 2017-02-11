@@ -1,8 +1,8 @@
 SELECT ?person ?personLabel ?occupation ?occupationLabel WHERE {
-    ?person wdt:P69 wd:Q1232180. 
-    ?person wdt:P21 wd:Q6581072.
-    ?person wdt:P106 ?occupation
-    SERVICE wikibase:label {				
-      bd:serviceParam wikibase:language "es" .
-    }
+  ?person wdt:P69 wd:Q1232180. 
+  ?person wdt:P21 wd:Q6581072.
+  ?person wdt:P106 ?occupation
+  SERVICE wikibase:label {				
+    bd:serviceParam wikibase:language "es" .
+  }
 }
