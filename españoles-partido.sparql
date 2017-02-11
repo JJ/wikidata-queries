@@ -1,0 +1,7 @@
+SELECT ?person ?personLabel ?party ?partyLabel WHERE { 
+    ?person wdt:P27 wd:Q29 .	
+    ?person wdt:P102 ?party .
+    SERVICE wikibase:label {
+      bd:serviceParam wikibase:language "en" .
+    }
+}
