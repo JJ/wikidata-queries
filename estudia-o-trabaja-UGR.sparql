@@ -1,0 +1,13 @@
+SELECT ?person ?personLabel WHERE {
+  
+    { ?person wdt:P69 wd:Q1232180. 			
+      ?person wdt:P21 wd:Q6581072.			
+    } UNION {
+      ?person wdt:P108 wd:Q1232180. 			
+      ?person wdt:P21 wd:Q6581072.			
+    }
+  
+    SERVICE wikibase:label {			
+      bd:serviceParam wikibase:language "es" .
+	}
+}

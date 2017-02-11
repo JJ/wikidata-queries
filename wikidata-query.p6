@@ -1,5 +1,7 @@
 #!/usr/bin/env perl6
 
+# Use SPARQL endpoint for obtaining wikidata
+
 use URI::Encode;
 use HTTP::Client;
 
