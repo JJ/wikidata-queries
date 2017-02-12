@@ -1,0 +1,14 @@
+SELECT ?university ?universityLabel (COUNT(?person) AS ?count) 
+WHERE {
+    
+  ?person wdt:P21 wd:Q6581072 .
+  ?person wdt:P69 ?university .
+  ?university wdt:P31 wd:Q3918.           
+  ?university wdt:P17 wd:Q29. 			
+  
+  SERVICE wikibase:label {				
+    bd:serviceParam wikibase:language "es" .
+  }
+} 
+GROUP BY ?university ?universityLabel
+ORDER BY DESC(?count)
